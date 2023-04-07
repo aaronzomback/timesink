@@ -13,6 +13,10 @@ module.exports = {
         "neon-blue-primary": "#7AA8FF",
         "neon-blue-light": "#ADC9FF",
         "neon-blue-lightest": "#E0EBFF",
+        "neon-red-primary": "#EC2013",
+        "neon-red-light": "#FF6640",
+        "neon-red-lightest": "#FE6D48",
+        "gray-display-heavy": "#ffffff1a",
         "gray-display-primary": "#D4D6DC",
         "gray-display-medium": "#E3E4E8",
         "gray-display-light": "#F1F2F4",
@@ -20,6 +24,7 @@ module.exports = {
       fontFamily: {
         kingdom: ["var(--font-kingdom)"],
         logo: ["var(--font-logo)"],
+        logo_italic: ["var(--font-logo_italic)"],
         OGSans: ["var(--font-OGSans)"],
         lyon: ["var(--font-lyon)"],
       },
