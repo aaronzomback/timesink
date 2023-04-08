@@ -113,12 +113,12 @@ const AuthShowcase: React.FC = () => {
         {secretMessage && <span> - {secretMessage}</span>}
       </p>
       <button
-        className="rounded-full bg-neon-blue-primary px-10 py-3 font-semibold text-dark-theater-primary no-underline transition hover:bg-neon-blue-primary"
+        className="rounded border-2 border-neon-blue-heavy px-10 py-3 font-semibold text-neon-blue-heavy no-underline transition hover:bg-neon-blue-heavy hover:text-dark-theater-primary"
         onClick={sessionData ? () => void signOut() : () => void signIn()}
       >
         {sessionData ? "Sign out" : "Request membership"}
       </button>
-      <div className="flex flex-col items-center justify-center text-sm text-neon-blue-primary">
+      <div className="flex flex-col items-center justify-center text-sm text-neon-blue-heavy">
         <span>Already a member?</span>
         <span className="underline">Sign in</span>
       </div>
