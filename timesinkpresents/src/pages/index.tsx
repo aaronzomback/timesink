@@ -12,17 +12,22 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>TimeSink Presents</title>
+        <title>TimeSink presents</title>
         <meta name="description" content="Discover cinema" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-start bg-dark-theater-primary">
         <div className="container flex flex-col items-center justify-center gap-32 px-4 py-16">
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <h1
-              className={`${LOGO.variable} text-center font-logo text-5xl text-mystery-white sm:text-[5rem]`}
+              className={`${LOGO.variable} text-center font-logo text-5xl text-mystery-white sm:text-[4rem]`}
             >
-              TimeSink Presents
+              TimeSink
+            </h1>
+            <h1
+              className={`${LOGO.variable} text-center font-logo text-5xl text-mystery-white sm:text-[4rem]`}
+            >
+              presents
             </h1>
           </div>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
@@ -113,7 +118,7 @@ const AuthShowcase: React.FC = () => {
         {secretMessage && <span> - {secretMessage}</span>}
       </p>
       <button
-        className="rounded-full border-2 border-neon-blue-heavy px-10 py-3 font-semibold text-neon-blue-heavy no-underline transition hover:bg-neon-blue-heavy hover:text-dark-theater-primary"
+        className="rounded border-2 border-neon-blue-heavy px-10 py-3 font-semibold text-neon-blue-heavy no-underline transition hover:bg-neon-blue-heavy hover:text-dark-theater-primary"
         onClick={sessionData ? () => void signOut() : () => void signIn()}
       >
         {sessionData ? "Sign out" : "Join the waiting list"}
